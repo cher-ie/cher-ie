@@ -1,0 +1,23 @@
+import java.util.*;
+public class main {
+    public static void main (String args []){
+        for (int x = 1; x <= 1000; x++) {
+            System.out.print(x + " ");
+            System.out.println(stoppingTime(x));
+        }
+    }
+
+    public static int stoppingTime(int x){
+        int i = 0;
+        while (x != 1){
+            if (x % 2 == 0){
+                x=x/2;
+            }
+            else {
+                x = (3*x)+1;
+            }
+            i += 1;
+        }
+        return (i);
+    }
+}
